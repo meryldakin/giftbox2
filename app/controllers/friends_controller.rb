@@ -8,9 +8,9 @@ class FriendsController < ApplicationController
   end
 
   def show
-    friend = Friend.find_by(id: params[:id])
-    celebrations = friend.friend_celebrations
-    render json: {friend: friend, celebrations: celebrations}
+    # friend = Friend.find_by(id: params[:id])
+    # celebrations = friend.friend_celebrations if friend
+    # render json: {friend: friend, celebrations: celebrations}
   end
 
 end
